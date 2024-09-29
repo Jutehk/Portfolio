@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <nav class="navbar">
+        <a href="#home" class="active"  style="--i:1;">Home</a>
+        <a href="#about"style="--i:2;">About</a>
+        <a href="#skills"style="--i:3;">Skills</a>
+        <a href="#projects"style="--i:4;">Projects</a>
+        <a href="#contact"style="--i:5;">Contact</a>
+    </nav>
+
+
+   <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="menu-links">
+                
+        <li><a href="#home" onclick="toggleMenu()" style="--i:1;">Home</a></li>
+        <li> <a href="#about" onclick="toggleMenu()" style="--i:2;">About</a></li>
+        <li> <a href="#skills" onclick="toggleMenu()" style="--i:3;">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()" style="--i:4;">Projects</a></li>
+        <li> <a href="#contact" onclick="toggleMenu()" style="--i:5;">Contact</a></li>
+         </ul>
+
+        </div>
+    </div>
+   </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h2>Hello, it's <span>Me</span></h2>
+        <h1>Jutehk Omar</h1>
+        <h3> And I'm a <span class="multiple-text">Frontend Developer</span></h3>
+        <p> with knowledge in web development and design, I offer the best 
+            projects  resulting in quality work.
+        </p>
+
+        <div class="social-media">
+            <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:8;"><i class='bx bxl-twitter' ></i></a>
+            <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+
+        <a href="Jutehk omar.pdf" class="btn" target="_blank" download="pdf">Download Cv</a>
+    </div>
+
+    <div class="home-img">
+        <img src="images/person2.JPG" alt="img">
+    </div>
+</section>
+
+
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/person1.JPG" alt="">
+    </div>
+    <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>Hello! I'm a passionate Frontend Developer with a background in Mathematics and Computer Science. I specialize in creating visually appealing
+             and user-friendly websites. My goal is to build websites that are not only functional but also provide an excellent user experience.</p>
+        <button id="more-btn">Read More</button>
+        <p id="extra-info" class="hidden">With experience in HTML, CSS, JavaScript, and modern frameworks, I have developed a variety of web projects. I am always eager to learn new technologies and improve my skills. In addition to web development, I enjoy writing and have a keen interest in design, which helps me create well-rounded projects that balance aesthetics and functionality.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<h1 class="sub-title" id="skills">My <span>Skills</span></h1>
+
+ <section>
+   
+    <div class="container1">
+        <h1 class="heading1">Technical Skills</h1>
+
+        <div class="Technical-bars">
+
+            <div class="bar">
+                <i style="color: #c95d2e" class='bx bxl-html5'></i>
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <i style="color: #147bbc" class='bx bxl-css3'></i>
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar">
+                <i style="color: #b0bc10" class='bx bxl-javascript'></i>
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line javascript">
+                    <span></span>
+                </div>
+            </div>    
+
+            <div class="bar">
+                <i style="color: #c32ec9" class='bx bxl-python'></i>
+                <div class="info">
+                    <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
+                <div class="info">
+                    <span>react</span>
+                </div>
+                <div class="progress-line react">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container1">
+    <h1 class="heading2">Professional Skills</h1>
+    <div class="radial-bars">
+
+        <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+        </div>
+
+        <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">65%</div>
+            <div class="text">Communication</div>
+        </div>
+
+        <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">70%</div>
+            <div class="text">Problem solving</div>
+        </div>
+
+        <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Teamwork</div>
+        </div>
+    </div>    
+</div>
+ </section>
+<!-- projects Section -->
+
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title"><span>My</span> Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project1.jpg" alt="img">
+                <h2>project one</h2>
+                <div class="layer">
+                    <h3>coffee-shop-website</h3>
+                    <p> A modern design for a local coffee shop.</p>
+                    <a href="https://jutehk.github.io/coffee-shop-website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project3.1.jpg" alt="img">
+                <h2>project two</h2>
+                <div class="layer">
+                    <h3>E-commerce platform</h3>
+                    <p>An online store for a variety of products.</p>
+                    <a href="https://jutehk.github.io/E-commerce-website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/educa2.jpg" alt="img">
+                <h2>project three</h2>
+                <div class="layer">
+                    <h>Educational website</h3>
+                    <p>A platform for students to learn online.</p>
+                    <a href="https://jutehk.github.io/Educational-website/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> 
+        </div>
+    </div>
+ </div>
+
+
+ <!-- Contact Section -->
+ <section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span> Me </span></h2>
+        <h4>Let's Work Together</h4>
+        <p>If you have any questions, feel free to reach out! I'm open to new opportunities and collaborations.</p>
+    
+            <div class="contact-list">
+                <li> <i class="bx bxs-send"></i>julianandunge54@gmail.com</li>
+                <li> <i class="bx bxs-phone"></i> 0718453328</li>
+            </div>
+
+            <div class="contact-icons">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/juliana-ndunge-a5ba46284?trk=contact-info" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+    </div>
+
+    <div class="contact-form">
+        <form action="">
+            <input type="" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <input type="" placeholder="Enter Your Subject">
+            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="submit" class="send">
+        </form>
+    </div>
+ </section>
+<div class="last-text">
+    <p>Developed with love by Juhtek Omar</p>
+</div>
+<a href="#" class="top"><i class="bx bx-up-arrow-alt" ></i></a>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
